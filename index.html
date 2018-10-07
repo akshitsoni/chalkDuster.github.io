@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Chalk Duster</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto|Shadows+Into+Light+Two" rel="stylesheet">
+</head>
+<body>
+  <nav class="blue" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo font">ChalkDuster</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <!-- <h1 class="header center orange-text">ChalkDuster</h1> -->
+      <div class="row center">
+        <h3 class="header center col s12 light">Instantly share and collaborate with your class in real time</h3>
+        <h5 class ="center col s12 light">online, fast and fluid </h5>
+      </div>
+      <div class="row center">
+        <button id="sign_in_button" class="btn-large waves-effect waves blue font1">Sign in with Google</button>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAZ10fqW9w1fket0q38ZzTUOfONWQN9gTE",
+      authDomain: "pilot-bd1cf.firebaseapp.com",
+      databaseURL: "https://pilot-bd1cf.firebaseio.com",
+      projectId: "pilot-bd1cf",
+      storageBucket: "pilot-bd1cf.appspot.com",
+      messagingSenderId: "359493310073"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="functions.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Realtime</h5>
+
+            <p class="light">Set up a class instantly to learn and share ideas with others, and see their contributions in real time.
+
+ChalkDuster gets work done when it needs to be done; no overhead setting up, preparing slides, or inviting people to a class.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Collaborative Approach</h5>
+
+            <p class="light">Learn with remote individuals, dispersed classes, at the best schools.
+
+ChalkDuster effortlessly connects people, regardless of where they are geographically.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work</h5>
+
+            <p class="light">Use a tablet, desktop, electronic whiteboard, or even mobile phone to join.
+
+ChalkDuster enables effective and efficient creation, review, and organization of any type of content, as fluidly as pen and paper.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About Us</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project to create a simple and effective collaborative whiteboard for teaching purpose. Draw in realtime and connect with your peers through our chat feature for efficient learning.</p>
+
+
+        </div>
+        <!-- <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div> -->
+        <!-- <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <b><></b> with &hearts; <b>BogoSort</b>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.font{
+    /*font-family: 'Shadows Into Light Two', cursive;*/
+    font-family: 'Pacifico', cursive;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+.font1{
+    font-family: 'Roboto', sans-serif;
+}
+.custom-shadow{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}

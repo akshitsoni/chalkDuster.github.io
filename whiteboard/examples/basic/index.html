@@ -1,0 +1,68 @@
+<!-- includes -->
+<canvas id="drawCanvas" width="600" height="480">Canvas not working? :-/</canvas>
+<script src="https://cdn.pubnub.com/pubnub-3.14.1.min.js"></script>
+<script type="text/javascript" src="./app.js"></script>
+<link rel="stylesheet" href="./style.css">
+<h2>Collaborators: <span id="occupancy">0</span></h2>
+
+
+<script src="../../bower_components/angular/angular.js"></script>
+<script src="../../bower_components/rltm/web/rltm.js"></script>
+<script src="../../angular-chat.js"></script>
+
+<!-- add module to angular -->
+<script>
+var chat = angular.module( 'BasicChat', ['chat'] );
+</script>
+
+<!-- configuration -->
+<script>
+angular.module('chat').constant('config', {
+    rltm: {
+        service: "pubnub",
+        config: {
+            publishKey: "pub-c-61b2c432-67e7-490f-bddf-e001a044f530",
+            subscribeKey: "sub-c-062910fe-c945-11e8-b017-9246cc6b239c"
+        }
+    }
+});
+</script>
+
+<!-- controller -->
+<script>
+chat.controller( 'chat', [ 'Messages', '$scope', function( Messages, $scope ) {
+
+    // Message Inbox
+    $scope.messages = [];
+
+    // Receive Messages
+    Messages.receive(function(message) {
+        $scope.messages.push(message);
+    });
+
+    // Send Messages
+    $scope.send = function() {
+        Messages.send({
+            data: $scope.textbox
+        });
+    };
+
+}]);
+</script>
+
+<!-- view -->
+<div ng-app="BasicChat" style = "position: absolute;top: 80px;
+right: 0;
+width: 200px;
+height: 100px;
+border: 3px solid #73AD21;">
+    <div ng-controller="chat">
+        <div ng-repeat="message in messages">
+            <strong>{{message.user.name}}:</strong>
+            <span>{{message.data}}</span>
+        </div>
+        <form ng-submit="send()">
+            <input ng-model="textbox">
+        </form>
+    </div>
+</div>
