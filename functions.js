@@ -35,7 +35,7 @@ function createUser(uid,uname,uemail,photoURL) {
     imageURL: photoURL
   };
   usersRef.child(uid).set(user).then(function() {
-    redirect("/whiteboard/examples/basic/newIndex.html");
+    redirect("whiteboard/examples/basic/newIndex.html");
   });
 }
 
