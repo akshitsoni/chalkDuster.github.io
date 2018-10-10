@@ -71,9 +71,28 @@ body {
       width: 95%;
       background-color: #ffffff;
       padding: 4px;
-      border-radius: 12px;
+      border-radius: 4px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
   #color-btn{
       background-color: #f44336
+  }
+
+  .message-holder{
+      background-color: #ffffff;
+      border-radius: 4px;
+      padding: 4px;
+      display:inline-block;
+      left: 0;
+      margin-bottom: 8px;
+  }
+
+  .sender-id{
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+
+  .message-content{
+      font-size: 0.8em;
   }
