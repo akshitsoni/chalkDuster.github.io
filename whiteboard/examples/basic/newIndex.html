@@ -77,7 +77,10 @@
         <div ng-app="BasicChat" class="BasicChat">
             <div ng-controller="chat" class = "chatbox" style="padding: 10px">
                 <div ng-repeat="message in messages">
-                    <strong>{{message.user}}:</strong> <span>{{message.data}}</span>
+                    <div class="message-holder">
+                        <div class="sender-id">{{message.user}}</div>
+                        <div class="message-content">{{message.data}}</div>
+                    </div>
                 </div>
                 <div id = 'message-input-container'>
                     <form ng-submit="send()">
