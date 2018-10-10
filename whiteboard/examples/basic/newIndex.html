@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 </head>
 
 <body>
     <h2>Collaborators: <span id="occupancy">0</span></h2>
-
-    <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    
-    <!-- includes -->
-
-
     <script src="https://cdn.pubnub.com/pubnub-3.14.1.min.js"></script>
-    
     <link rel="stylesheet" href="./style.css">
     <script src="../../bower_components/angular/angular.js"></script>
     <script src="../../bower_components/rltm/web/rltm.js"></script>
@@ -70,7 +59,7 @@
             <canvas id="drawCanvas">Canvas not working? :-/</canvas>
         </div>
         <div class="fixed-action-btn">
-            <a class="btn-floating btn-large black">
+            <a class="btn-floating btn-large" id="color-btn">
               <i class="small material-icons">mode_edit</i>
             </a>
             <ul>
@@ -97,9 +86,7 @@
                 </div>
             </div>
         </div>    
-   </div>
-
-      
+   </div> 
       <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var elems = document.querySelectorAll('.fixed-action-btn');
@@ -114,7 +101,6 @@
     });
   });
       </script>
-   
     <script type="text/javascript" src="./app.js"></script>
 </body>
 

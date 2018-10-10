@@ -97,6 +97,7 @@ function resizer() {
 }
 
 function changer(x) {
+  console.log(document.getElementById("color-btn"));
   console.log(x);
   if(x==="erase") {
     console.log("INSIDE");
@@ -104,6 +105,7 @@ function changer(x) {
     changeColor("#fffff1");
   }
   else {
+    document.getElementById("color-btn").style.backgroundColor = x;
     ctx.lineWidth = 3;
     changeColor(x);
   }
