@@ -73,3 +73,7 @@ body {
       padding: 4px;
       border-radius: 12px;
   }
+
+  #color-btn{
+      background-color: #f44336
+  }
