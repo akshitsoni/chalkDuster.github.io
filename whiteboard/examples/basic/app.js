@@ -5,6 +5,7 @@ var channel = 'draw';
 var pubnub = PUBNUB.init({
 		publish_key: 'pub-c-b710a41c-449b-44f3-9821-a7f907a91a59',
 		subscribe_key: 'sub-c-9034986c-ccc5-11e8-80d1-72aadab1d7f1',
+		ssl: true,
 });
 
 pubnub.subscribe({
