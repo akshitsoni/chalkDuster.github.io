@@ -14,7 +14,7 @@ Built using
 1. Clone the code
 
 ``` bash
-git clone https://github.com/akshitsoni/chalkDuster.github.io.git
+git clone https://github.com/akshitsoni/chalkDuster
 ```
 
 2. Start a basic web server. We used the Chrome 200OK server.
